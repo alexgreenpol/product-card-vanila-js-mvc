@@ -1,0 +1,288 @@
+.card {
+  box-sizing: border-box;
+  position: relative;
+  width: 320px;
+  min-width: 320px;
+  margin: 5px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  padding: 30px 15px 15px;
+  overflow: hidden;
+}
+.card .btn--outline {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: 42px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card .btn--outline:hover {
+  background: #ffffff;
+  color: #002e66;
+}
+.card .card__thumb {
+  margin-bottom: 30px;
+}
+.card .card__thumb img {
+  max-width: 100%;
+}
+.card .card__title {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.card .card__footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.card .card__footer-top .card__quantity {
+  display: flex;
+  max-width: 110px;
+}
+.card .card__footer-top .card__quantity span {
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #d1d1d1;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card .card__footer-top .card__quantity span:hover {
+  background-color: #002e66;
+  color: #ffffff;
+}
+.card .card__footer-top .card__quantity .minus {
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+}
+.card .card__footer-top .card__quantity .plus {
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+}
+.card .card__footer-top .card__quantity input {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #d1d1d1;
+}
+.card .card__footer-top .card__price {
+  font-size: 30px;
+  color: #002e66;
+}
+.card .card__footer-top .card__price .currency {
+  color: #d1d1d1;
+}
+.card .card__footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card__footer-bottom .oneclick-link {
+  text-decoration: none;
+  color: #002e66;
+  border-bottom: 1px dashed #002e66;
+  transition: all 0.3s;
+}
+.card .card__footer-bottom .oneclick-link:hover {
+  color: #42638a;
+  border-color: #ffffff;
+}
+.card .card__footer-bottom .btn--add-to-cart {
+  width: 128px;
+  height: 45px;
+  font-size: 18px;
+  background: #002e66;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 0 2px #002e66;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card .card__footer-bottom .btn--add-to-cart:hover {
+  background: #42638a;
+  box-shadow: 0 0 0 2px #42638a;
+}
+.card .cart-holder {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background: #002e66;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: all 0.3s;
+  height: 100%;
+}
+.card .cart-holder .cart-holder__close {
+  text-align: right;
+}
+.card .cart-holder .cart-holder__close .close-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 0;
+}
+.card .cart-holder .cart-holder__icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card .cart-holder .cart-holder__icon img {
+  max-width: 100px;
+}
+.card .cart-holder .cart-holder__title {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card .cart-holder .cart-holder__table {
+  margin-bottom: 20px;
+}
+.card .cart-holder .cart-holder__table table {
+  border: 1px solid #ffffff;
+  border-collapse: collapse;
+}
+.card .cart-holder .cart-holder__table table td {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  width: 50%;
+  padding: 8px;
+}
+.card .cart-holder .cart-holder__table table td:nth-child(2) {
+  text-align: center;
+}
+.card .cart-holder .cart-holder__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .cart-holder .cart-holder__footer .cancel-link {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+.card .cart-holder .cart-holder__footer .cancel-link:hover {
+  border-color: #002e66;
+}
+.card .phone-order {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background: #002e66;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: all 0.3s;
+}
+.card .phone-order .phone-order__close {
+  text-align: right;
+}
+.card .phone-order .phone-order__close .close-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 0;
+}
+.card .phone-order .phone-order__title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.card .phone-order .phone-order__number {
+  margin-bottom: 20px;
+}
+.card .phone-order .phone-order__number label {
+  color: #ffffff;
+}
+.card .phone-order .phone-order__number .decorator {
+  position: relative;
+  display: block;
+}
+.card .phone-order .phone-order__number .decorator:before {
+  transition: all 0.3s;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: #ffffff;
+  width: 0;
+}
+.card .phone-order .phone-order__number input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  height: 25px;
+}
+.card .phone-order .phone-order__number input:focus + .decorator:before {
+  width: 100%;
+}
+.card .phone-order .phone-order__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .phone-order .phone-order__footer .price {
+  font-size: 24px;
+  color: #ffffff;
+}
+.card .phone-order .phone-order__footer .btn--outline {
+  max-width: 100px;
+}
+.card .thank-holder {
+  box-sizing: border-box;
+  min-height: 230px;
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  bottom: 0;
+  background: #002e66;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: all 0.3s;
+}
+.card .thank-holder .thank-holder__close {
+  text-align: right;
+}
+.card .thank-holder .thank-holder__close .close-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 0;
+}
+.card .thank-holder .thank-holder__icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card .thank-holder .thank-holder__icon img {
+  max-width: 60px;
+}
+.card .thank-holder .thank-holder__title {
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
