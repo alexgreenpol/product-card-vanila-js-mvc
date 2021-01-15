@@ -1,9 +1,9 @@
 {
-    "name": "alex",
+    "name": "product-card-vanila-js-mvc",
     "description": "Products",
-    "author": "alex",
+    "author": "suhrob",
     "contributors": [
-        "alex"
+        "suhrob"
     ],
     "scripts": {
         "build": "webpack",
