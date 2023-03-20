@@ -32,10 +32,10 @@ class ProductCardView extends EventEmitter {
 
 		root.querySelector('.card__quantity').addEventListener('click', (evt) => {
 			const step = +this.quantityField.step;
-			if(evt.target.classList.contains('minus')) {
+			if (evt.target.classList.contains('minus')) {
 				this.quantityField.value > 1 ? this.quantityField.value -= step : null;
 			}
-			if(evt.target.classList.contains('plus')) {
+			if (evt.target.classList.contains('plus')) {
 				this.quantityField.value = +this.quantityField.value + step;
 			}
 		});
@@ -67,7 +67,7 @@ class ProductCardView extends EventEmitter {
 
 			const phoneValue = this.phoneField.value;
 
-			if(!phoneValue) {
+			if (!phoneValue) {
 				alert('Fill your phone number please!');
 				return
 			}
@@ -86,7 +86,7 @@ class ProductCardView extends EventEmitter {
 				this.phoneOrder.style.right = "0";
 				this.phoneOrder.style.left = "0";
 			}, 600);
-			
+
 		});
 	}
 
@@ -104,7 +104,7 @@ class ProductCardView extends EventEmitter {
         <input class="quantity-field" type="number" value="1" step="4">
         <span class="plus">+</span>
       </div>
-      <div class="card__price">${data.price} <span class="currency">₽</span></div>
+      <div class="card__price">${data.price} <span class="currency">$</span></div>
     </div>
     <div class="card__footer-bottom">
       <a href="#" class="oneclick-link">Купить в 1 клик</a>
@@ -126,7 +126,7 @@ class ProductCardView extends EventEmitter {
           <tbody>
             <tr>
               <td>${data.title}</td>
-              <td><span class="quantity-products">1</span> x ${data.price} ₽</td>
+              <td><span class="quantity-products">1</span> x ${data.price} $</td>
             </tr>
           </tbody>
         </table>
@@ -150,7 +150,7 @@ class ProductCardView extends EventEmitter {
         </label>          
       </div>
       <div class="phone-order__footer">
-        <div class="price">${data.price} ₽</div>
+        <div class="price">${data.price} $</div>
         <button class="btn btn--outline btn--buy">Купить</button>
       </div>      
 		</div>
